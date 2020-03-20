@@ -26,5 +26,8 @@ describe('Login modal', ()=>{
     cy.loginModalGetRememberMeInput()
       .siblings('label[for="keep"]')
       .should('have.text', rememberMeLabel);
+      cy.loginModalGetCloseBtn()
+      .scrollIntoView()
+      .click();
   });
 });

@@ -19,4 +19,3 @@ Cypress.Commands.add('loginModalGetRememberMeInput', () => {
 Cypress.Commands.add('loginModalGetSubmitBtn', () => {
   cy.get(`${loginModalPrefixSelector} button[type="submit"]`);
 })
-

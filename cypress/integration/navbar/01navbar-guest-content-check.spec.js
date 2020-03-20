@@ -113,8 +113,9 @@ describe('Navbar content as guest', () => {
   
   })
 
-  it.only('checks userPanel login element when not logged in', () => {
+  it('checks userPanel login element when not logged in', () => {
     cy.navbarGetUserPanelLogin()
+      .as('userPanelLogin')
       .find('[data-protractor="main-page-login-button"]')
       .should('have.text', 'Zaloguj')
   })

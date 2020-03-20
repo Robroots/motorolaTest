@@ -4,11 +4,11 @@
 describe('Navbar links', ()=>{
   const redirectCommandsArr = [
     { command: cy.navbarGoToHomeByLogo, pathExtension: '/' },
-    { command: cy.navbarGoToHomeByNavLink, pathExtension: '/' },
     { command: cy.navbarGoToHotels, pathExtension: '/hotele' },
     { command: cy.navbarGoToSpecialOffers, pathExtension: '/bilety-lotnicze/promocje' },
     { command: cy.navbarGoToBussinessArea, pathExtension: '/strefa-biznes' },
-    { command: cy.navbarGoToContact, pathExtension: '/kontakt' }
+    { command: cy.navbarGoToContact, pathExtension: '/kontakt' },
+    { command: cy.navbarGoToHomeByNavLink, pathExtension: '/' }
   ];
 
   it('goes to each navbar link and checks redirection', ()=>{
